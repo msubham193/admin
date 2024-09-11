@@ -7,7 +7,7 @@ interface Document {
 }
 
 const UserPortal: React.FC = () => {
-  const [documents, setDocuments] = useState<Document[]>([]);
+  const [documents] = useState<Document[]>([]);
 
   useEffect(() => {
     // Fetch user's documents from backend

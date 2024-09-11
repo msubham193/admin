@@ -16,7 +16,7 @@ const UserManagement: React.FC = () => {
     // Fetch users from the backend
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/users", {
+        const response = await fetch("https://admin-5fdy.onrender.com/api/users", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const UserManagement: React.FC = () => {
   const handleApprove = async (id: number) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/users/${id}/approve`,
+        `https://admin-5fdy.onrender.com/api/users/${id}/approve`,
         {
           method: "PATCH",
           headers: {
@@ -82,7 +82,7 @@ const UserManagement: React.FC = () => {
     if (reason) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/users/${id}/reject`,
+          `https://admin-5fdy.onrender.com/users/${id}/reject`,
           {
             method: "PATCH",
             headers: {

@@ -18,7 +18,7 @@ const DocumentCreation: React.FC = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "http://localhost:5000/api/users?status=Approved",
+          "https://admin-5fdy.onrender.com/api/users?status=Approved",
           {
             method: "GET",
             headers: {
@@ -48,7 +48,7 @@ const DocumentCreation: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/users/document", {
+      const response = await fetch("https://admin-5fdy.onrender.com/api/users/document", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

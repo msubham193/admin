@@ -29,7 +29,7 @@ const AddUser: React.FC = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/users", {
+      const response = await fetch("https://admin-5fdy.onrender.com/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

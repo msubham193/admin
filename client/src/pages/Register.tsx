@@ -22,7 +22,7 @@ const Register: React.FC = () => {
 
     try {
       // Send register request using fetch
-      const response = await fetch("http://localhost:5000/api/users/register", {
+      const response = await fetch("https://admin-5fdy.onrender.com/api/users/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

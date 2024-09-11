@@ -17,7 +17,7 @@ const Dashboard: React.FC = () => {
           return;
         }
         const response = await fetch(
-          "http://localhost:5000/api/users/dashboard",
+          "https://admin-5fdy.onrender.com/api/users/dashboard",
           {
             method: "GET",
             headers: {
